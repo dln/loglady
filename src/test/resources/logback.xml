@@ -1,0 +1,15 @@
+<configuration>
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+        <Pattern>%d{HH:mm:ss.SSS} %-5level - %msg%n</Pattern>
+        <!--<pattern>[%4p] [%d{ISO8601}] [%t] %c{1}: %m%n</pattern>-->
+        <!--<pattern>%-5level %d{ISO8601} [%t]: %m%n</pattern>-->
+    </encoder>
+    <target>System.out</target>
+  </appender>
+
+  <root level="debug">
+    <appender-ref ref="console" />
+  </root>
+</configuration>
