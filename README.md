@@ -1,7 +1,7 @@
 Log Lady - Crazy Simple Logging in Scala
 ========================================
 
-<div style="float: right"><img src="http://i.imgur.com/jPZF7.jpg"></div>
+<img src="http://i.imgur.com/jPZF7.jpg" style="float:right" />
 
 > "My log has something to tell you. Can you hear it?"
 
