@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>org.eintr.loglady.BasicLogger</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../lib/class_big.png" />
+        <p id="owner"><a name="org" class="extype" href="../../package.html">org</a>.<a name="org.eintr" class="extype" href="../package.html">eintr</a>.<a name="org.eintr.loglady" class="extype" href="package.html">loglady</a></p>
+        <h1>BasicLogger</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <span class="name">BasicLogger</span>
+        
+        <span class="result"> extends <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Logger without location awareness
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="org.eintr.loglady.BasicLogger" class="in"><span>BasicLogger</span></li><li name="org.eintr.loglady.Logger" class="in"><span>Logger</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="org.eintr.loglady.BasicLogger#this" data-isabs="false">
+      <a id="this:BasicLogger"></a>
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol"> 
+        <span class="name">BasicLogger</span>
+        
+        <span class="params">(<span name="logger">logger: <span name="org.slf4j.Logger" class="extype">Logger</span></span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="prt" name="org.eintr.loglady.Logger#LogFunc" data-isabs="false">
+      <a id="LogFunc:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">LogFunc</span>
+        
+        <span class="result"> = (String, Throwable) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A function that logs a message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>A function that logs a message with an exception</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#debug" data-isabs="false">
+      <a id="debug(Throwable,String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">debug</span>
+        
+        <span class="params">(<span name="thrown">thrown: Throwable</span>, <span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log debug message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>Log debug message with an exception</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#debug" data-isabs="false">
+      <a id="debug(String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">debug</span>
+        
+        <span class="params">(<span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log debug message</p><div class="fullcomment"><div class="comment cmt"><p>Log debug message</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#error" data-isabs="false">
+      <a id="error(Throwable,String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">error</span>
+        
+        <span class="params">(<span name="thrown">thrown: Throwable</span>, <span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log error message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>Log error message with an exception</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#error" data-isabs="false">
+      <a id="error(String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">error</span>
+        
+        <span class="params">(<span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log error message</p><div class="fullcomment"><div class="comment cmt"><p>Log error message</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.Logger#format" data-isabs="false">
+      <a id="format(String,Seq[Any]):String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">format</span>
+        
+        <span class="params">(<span name="fmt">fmt: String</span>, <span name="params">params: Seq[<span name="scala.Any" class="extype">Any</span>]</span>)</span><span class="result">: String</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Format a string using params, if any, otherwise use the string as-is</p><div class="fullcomment"><div class="comment cmt"><p>Format a string using params, if any, otherwise use the string as-is</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected final </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@inline</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#info" data-isabs="false">
+      <a id="info(Throwable,String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">info</span>
+        
+        <span class="params">(<span name="thrown">thrown: Throwable</span>, <span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log info message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>Log info message with an exception</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#info" data-isabs="false">
+      <a id="info(String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">info</span>
+        
+        <span class="params">(<span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log info message</p><div class="fullcomment"><div class="comment cmt"><p>Log info message</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#isDebugEnabled" data-isabs="false">
+      <a id="isDebugEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isDebugEnabled</span>
+        
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#isErrorEnabled" data-isabs="false">
+      <a id="isErrorEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isErrorEnabled</span>
+        
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#isInfoEnabled" data-isabs="false">
+      <a id="isInfoEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInfoEnabled</span>
+        
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#isTraceEnabled" data-isabs="false">
+      <a id="isTraceEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isTraceEnabled</span>
+        
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#isWarnEnabled" data-isabs="false">
+      <a id="isWarnEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isWarnEnabled</span>
+        
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logDebug" data-isabs="false">
+      <a id="logDebug:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logDebug</span>
+        
+        <span class="result">: LogFunc</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logError" data-isabs="false">
+      <a id="logError:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logError</span>
+        
+        <span class="result">: LogFunc</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logInfo" data-isabs="false">
+      <a id="logInfo:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logInfo</span>
+        
+        <span class="result">: LogFunc</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logTrace" data-isabs="false">
+      <a id="logTrace:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logTrace</span>
+        
+        <span class="result">: LogFunc</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logWarn" data-isabs="false">
+      <a id="logWarn:LogFunc"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logWarn</span>
+        
+        <span class="result">: LogFunc</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="prt" name="org.eintr.loglady.BasicLogger#logger" data-isabs="false">
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">logger</span>
+        
+        <span class="result">: <span name="org.slf4j.Logger" class="extype">Logger</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The underlying logger as provided by slf4j</p><div class="fullcomment"><div class="comment cmt"><p>The underlying logger as provided by slf4j</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="org.eintr.loglady.BasicLogger" class="extype" href="">BasicLogger</a> → <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#name" data-isabs="false">
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol"> 
+        <span class="name">name</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Name of the underlying logger</p><div class="fullcomment"><div class="comment cmt"><p>Name of the underlying logger</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#trace" data-isabs="false">
+      <a id="trace(Throwable,String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">trace</span>
+        
+        <span class="params">(<span name="thrown">thrown: Throwable</span>, <span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log trace message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>Log trace message with an exception</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#trace" data-isabs="false">
+      <a id="trace(String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">trace</span>
+        
+        <span class="params">(<span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log trace message</p><div class="fullcomment"><div class="comment cmt"><p>Log trace message</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#warn" data-isabs="false">
+      <a id="warn(Throwable,String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">warn</span>
+        
+        <span class="params">(<span name="thrown">thrown: Throwable</span>, <span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log warning message with an exception</p><div class="fullcomment"><div class="comment cmt"><p>Log warning message with an exception</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li><li visbl="pub" name="org.eintr.loglady.Logger#warn" data-isabs="false">
+      <a id="warn(String,Any*):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">warn</span>
+        
+        <span class="params">(<span name="message">message: String</span>, <span name="params">params: <span name="scala.Any" class="extype">Any</span>*</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Log warn message</p><div class="fullcomment"><div class="comment cmt"><p>Log warn message</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div name="org.eintr.loglady.Logger" class="parent">
+              <h3>Inherited from <a name="org.eintr.loglady.Logger" class="extype" href="Logger.html">Logger</a></h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
