@@ -29,5 +29,7 @@ class SimpleExample extends Logging {
   log.info("We're ok though...")
 
   log.warn("Is debug enabled? %s", log.isDebugEnabled)
+
+  def getLog = log   // Used for testing
 }
 
