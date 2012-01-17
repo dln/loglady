@@ -1,9 +1,10 @@
 Log Lady - Crazy Simple Logging in Scala
 ========================================
 
+<div style="float: right"><img src="http://i.imgur.com/jPZF7.jpg"></div>
+
 > "My log has something to tell you. Can you hear it?"
 
-![Log Lady](http://i.imgur.com/jPZF7s.jpg)
 
 loglady is a thin wrapper around [slf4j](http://slf4j.org/), providing a simple API 
 similar to [Python's logging module](http://docs.python.org/library/logging.html).
