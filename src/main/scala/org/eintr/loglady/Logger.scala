@@ -31,9 +31,10 @@ object Logger {
 
 
 abstract class Logger {
+  protected type LogFunc = (String, Throwable) => Unit
+
   lazy val name = logger.getName
 
-  protected type LogFunc = (String, Throwable) => Unit
   protected val logger: Slf4jLogger
   protected val logTrace: LogFunc
   protected val logDebug: LogFunc
@@ -93,27 +94,22 @@ abstract class Logger {
 }
 
 
-private[loglady] final class BasicLogger(protected val logger: Slf4jLogger) extends Logger {
+private final class BasicLogger(protected val logger: Slf4jLogger) extends Logger {
   protected val logTrace: LogFunc = logger.trace(_, _)
   protected val logDebug: LogFunc = logger.debug(_, _)
-  protected val logInfo: LogFunc = logger.info(_, _)
-  protected val logWarn: LogFunc = logger.warn(_, _)
+  protected val logInfo: LogFunc  = logger.info(_, _)
+  protected val logWarn: LogFunc  = logger.warn(_, _)
   protected val logError: LogFunc = logger.error(_, _)
 }
 
 
-private[loglady] final class LocationAwareLogger(protected val logger: Slf4jLocationAwareLogger) extends Logger {
+private final class LocationAwareLogger(protected val logger: Slf4jLocationAwareLogger) extends Logger {
   import Slf4jLocationAwareLogger.{ERROR_INT, WARN_INT, INFO_INT, DEBUG_INT, TRACE_INT}
-
-  protected def wrapLog(level: Int): LogFunc = {
-    val fqcn = classOf[LocationAwareLogger].getCanonicalName
-    logger.log(null, fqcn, level, _, null, _)
-  }
-
-  protected val logTrace = wrapLog(TRACE_INT)
-  protected val logDebug = wrapLog(DEBUG_INT)
-  protected val logInfo = wrapLog(INFO_INT)
-  protected val logWarn = wrapLog(WARN_INT)
-  protected val logError = wrapLog(ERROR_INT)
+  private val fqcn = classOf[LocationAwareLogger].getCanonicalName
+  protected val logTrace: LogFunc = logger.log(null, fqcn, TRACE_INT, _, null, _)
+  protected val logDebug: LogFunc = logger.log(null, fqcn, DEBUG_INT, _, null, _)
+  protected val logInfo: LogFunc  = logger.log(null, fqcn, INFO_INT,  _, null, _)
+  protected val logWarn: LogFunc  = logger.log(null, fqcn, WARN_INT,  _, null, _)
+  protected val logError: LogFunc = logger.log(null, fqcn, ERROR_INT, _, null, _)
 }
 

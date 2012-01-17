@@ -18,5 +18,5 @@ package org.eintr.loglady
 
 trait Logging {
   /** Instance logger object */
-  protected lazy val log = Logger(getClass)
+  protected[loglady] lazy val log = Logger(getClass)
 }
