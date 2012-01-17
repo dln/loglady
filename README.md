@@ -1,59 +1,32 @@
-Log Lady - Crazy Simple Logging in Scala
-========================================
+loglady - Crazy Simple Logging in Scala
+=======================================
+> "My log has something to tell you. Can you hear it?"
 
 <img src="http://i.imgur.com/jPZF7.jpg" style="float:right" />
 
-> "My log has something to tell you. Can you hear it?"
+loglady is a thin wrapper around [slf4j](http://slf4j.org/), providing ai
+simple API similar to [Python's logging module](http://docs.python.org/library/logging.html).
 
+Using slf4j, you may use whatever logging implementation suits your
+application. [Logback](http://logback.qos.ch/) is a good choice.
 
-loglady is a thin wrapper around [slf4j](http://slf4j.org/), providing a simple API 
-similar to [Python's logging module](http://docs.python.org/library/logging.html).
+The goal of the project is to be very simple, while adding as little overhead 
+as possible.
 
-With slf4j, you may use whatever logging implementation fits your application.
-[Logback](http://logback.qos.ch/) is a good choice.
-
-Other influences include [Logula](http://github.com/codahale/logula) and
+Influences include [logula](http://github.com/codahale/logula) and
 [slf4s](http://github.com/weiglewilczek/slf4s).
 
-Like logula, it doesn't use pass-by-name parameters to logging methods, 
-avoiding needless closures.
 
-
-Features
---------
-
- * Thin wrapper around slf4j
+Main Features
+-------------
+ * Thin slf4j wrapper 
  * Simple API
- * Focus on formatting for common use cases, like Python
  * No configuration
  * Supports Scala 2.8.1, 2.8.2, 2.9.0-1 and 2.9.1
 
 
-Getting Log Lady
-----------------
-
-### sbt
-
-```scala
-libraryDependencies += "org.eintr.loglady" %% "loglady" % "1.0.0"
-```
-
-### Maven
-
-```xml
-<dependency>
-  <groupId>org.eintr.loglady</groupId>
-  <artifactId>loglady_2.9.1</artifactId>
-  <version>1.0.0</version>
-</dependency>
-```
-
-Replace the scala version according to your project.
-
-
-Usage
------
-
+Usage Example
+-------------
 ```scala
 import org.eintr.loglady.Logging
 
@@ -79,6 +52,39 @@ class MyClass extends Logging {
 To get logging output, you also need a concrete logging library with slf4j.
 Simply adding `logback-classic` as a dependency to your project is a simple
 way. See the [logback website](http://logback.qos.ch/) for more information.
+
+
+Getting loglady
+---------------
+
+### sbt
+```scala
+libraryDependencies += "org.eintr.loglady" %% "loglady" % "1.0.0"
+```
+
+### Maven
+```xml
+<dependency>
+  <groupId>org.eintr.loglady</groupId>
+  <artifactId>loglady_2.9.1</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+Replace the scala version to match that of your project.
+
+
+API Documentation
+-----------------
+scaladoc API docs can be found at http://dln.github.com/loglady/api/
+
+
+Bug Reports and Contributing
+----------------------------
+Please report bugs using the Github issue tracker:
+
+http://github.com/dln/loglady/issues
+
 
 
 Copyright
