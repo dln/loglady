@@ -4,11 +4,12 @@ loglady - Crazy Simple Logging in Scala
 
 <img src="http://i.imgur.com/jPZF7.jpg" style="float:right" />
 
-loglady is a thin wrapper around [slf4j](http://slf4j.org/), providing ai
+loglady is a thin wrapper around [slf4j](http://slf4j.org/), providing a
 simple API similar to [Python's logging module](http://docs.python.org/library/logging.html).
 
-Using slf4j, you may use whatever logging implementation suits your
-application. [Logback](http://logback.qos.ch/) is a good choice.
+Using slf4j, you're free to choose whatever logging implementation suits your
+application or taste, but [Logback](http://logback.qos.ch/) seems like a good
+default.
 
 The goal of the project is to be very simple, while adding as little overhead 
 as possible.
@@ -76,15 +77,18 @@ Replace the scala version to match that of your project.
 
 API Documentation
 -----------------
-scaladoc API docs can be found at http://dln.github.com/loglady/api/
+Generated API docs (scaladoc) can be found at:
+
+http://dln.github.com/loglady/api/
 
 
-Bug Reports and Contributing
-----------------------------
-Please report bugs using the Github issue tracker:
+Bug Reports and Contributions
+-----------------------------
+Please submit bug reports and feature requests using the Github issue tracker:
 
 http://github.com/dln/loglady/issues
 
+Patches and suggestions for improvements are very welcome.
 
 
 Copyright
