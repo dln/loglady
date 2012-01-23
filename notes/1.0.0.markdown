@@ -1,0 +1,21 @@
+This is the first public release of [loglady](http://github.com/dln/loglady),
+a very simple logging trait with an API similar to Python's
+[logging](http://docs.python.org/library/logging.html) library.
+
+Example:
+
+    class MyClass extends Logging {
+
+      log.warn("We all float (%.4f) down here", 3.141592)
+      log.debug("Some random stuff: %d %s %x", 42, List(0, 1, 1, 2, 3, 5), -559038737)
+      log.error("Formatted date: %1$tm %1$te,%1$tY", new java.util.Date)
+
+      try {
+        throw new Exception("Oops!")
+      } catch {
+        case exc: Exception => {
+          log.error(exc, "Something bad happened")
+        }
+      }
+    }
+
