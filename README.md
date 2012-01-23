@@ -57,6 +57,8 @@ way. See the [logback website](http://logback.qos.ch/) for more information.
 
 Getting loglady
 ---------------
+loglady is published to the [Maven Central](http://search.maven.org/)
+repository, requiring minimal configuration using either sbt or maven:
 
 ### sbt
 ```scala
@@ -72,7 +74,7 @@ libraryDependencies += "org.eintr.loglady" %% "loglady" % "1.0.0"
 </dependency>
 ```
 
-Replace the scala version to match that of your project.
+Note: Replace the scala version to match that of your project.
 
 
 API Documentation
