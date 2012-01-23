@@ -1,0 +1,22 @@
+
+{
+ "organization":"org.eintr.loglady",
+ "name":"loglady",
+ "version":"1.0.0",
+ "description":"Crazy simple logging API for Scala.",
+ "site":"http://github.com/dln/loglady/",
+ "tags":["log","logging","slf4j"],
+ "docs":"http://dln.github.com/loglady/api/",
+ "licenses": [{
+   "name": "Apache License, Version 2.0",
+   "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+  }],
+ "resolvers": [],
+ "dependencies": [{
+   "organization":"org.slf4j",
+   "name": "slf4j-api",
+   "version": "1.6.1"
+  }],
+ "scalas": ["2.8.1","2.8.2","2.9.0-1","2.9.1"],
+ "sbt": false
+}

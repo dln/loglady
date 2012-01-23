@@ -4,7 +4,9 @@ name := "loglady"
 
 version := "1.0.1-SNAPSHOT"
 
-description := "Crazy simple logging."
+description := "Crazy simple logging API for Scala."
+
+licenses := Seq("Apache License, Version 2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.txt"))
 
 scalaVersion := "2.9.1"
 
@@ -59,4 +61,12 @@ pomExtra := (
       <url>http://eintr.org/</url>
     </developer>
   </developers>)
+
+seq(lsSettings :_*)
+
+LsKeys.tags in LsKeys.lsync := Seq("log", "logging", "slf4j")
+
+externalResolvers in LsKeys.lsync := Nil
+
+site in LsKeys.lsync := "http://github.com/dln/loglady/"
 
