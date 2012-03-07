@@ -17,6 +17,7 @@
 package org.eintr.loglady
 
 
+
 /**
  * Mixin trait with a single `log` member providing a simple logging API
  * using slf4j for actual logging.
