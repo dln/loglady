@@ -18,6 +18,7 @@ Influences include [logula](http://github.com/codahale/logula) and
 [slf4s](http://github.com/weiglewilczek/slf4s).
 
 
+
 Main Features
 -------------
  * Thin slf4j wrapper 
