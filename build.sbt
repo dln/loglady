@@ -2,7 +2,7 @@ organization := "org.eintr.loglady"
 
 name := "loglady"
 
-version := "1.1.0-SNAPSHOT"
+version := "1.1.0"
 
 description := "Crazy simple logging API for Scala."
 
@@ -44,13 +44,6 @@ pomIncludeRepository := { x => false }
 
 pomExtra := (
   <url>http://github.com/dln/loglady</url>
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
   <scm>
     <url>git@github.com:dln/loglady.git</url>
     <connection>scm:git:git@github.com:dln/loglady.git</connection>
