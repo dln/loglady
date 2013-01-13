@@ -24,7 +24,7 @@ Main Features
  * Thin slf4j wrapper 
  * Simple API
  * No configuration
- * Supports Scala 2.8.1, 2.8.2, 2.9.0-1 and 2.9.1
+ * Supports Scala 2.9.1, 2.9.2 and 2.10.0
 
 
 Usage Example
@@ -63,15 +63,15 @@ repository, requiring minimal configuration using either sbt or maven:
 
 ### sbt
 ```scala
-libraryDependencies += "org.eintr.loglady" %% "loglady" % "1.0.0"
+libraryDependencies += "org.eintr.loglady" %% "loglady" % "1.1.0"
 ```
 
 ### Maven
 ```xml
 <dependency>
   <groupId>org.eintr.loglady</groupId>
-  <artifactId>loglady_2.9.1</artifactId>
-  <version>1.0.0</version>
+  <artifactId>loglady_2.10.0</artifactId>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -97,7 +97,7 @@ Patches and suggestions for improvements are very welcome.
 Copyright
 ---------
 
-Copyright (c) 2012 Daniel Lundin
+Copyright (c) 2013 Daniel Lundin
 
 This software is licensed under the Apache License, Version 2.0. 
 Please see LICENSE for details.
