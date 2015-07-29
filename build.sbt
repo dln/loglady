@@ -23,7 +23,8 @@ libraryDependencies <++= scalaVersion {
     "org.specs2"     %% "specs2"          % "1.12.3" % "test"
   )
   case _ => Seq(
-    "org.specs2"     %% "specs2-core"     % "3.6.3"  % "test"
+    "org.specs2"     %% "specs2-core"     % "3.6.3"  % "test",
+    "org.specs2"     %% "specs2-junit"    % "3.6.3"  % "test"
   )
 }
 
