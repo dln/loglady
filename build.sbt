@@ -10,14 +10,23 @@ licenses := Seq("Apache License, Version 2.0" -> url("http://www.apache.org/lice
 
 scalaVersion := "2.9.2"
 
-crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.0")
+crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.4", "2.11.7")
 
 libraryDependencies ++= Seq(
   "org.slf4j"      %  "slf4j-api"       % "1.7.2",
   "ch.qos.logback" %  "logback-classic" % "1.0.0" % "test",
-  "junit"          %  "junit"           % "4.11"  % "test",
-  "org.specs2"     %% "specs2"          % "1.12.3" % "test"
+  "junit"          %  "junit"           % "4.11"  % "test"
 )
+
+libraryDependencies <++= scalaVersion {
+  case x if x.startsWith("2.9.") => Seq(
+    "org.specs2"     %% "specs2"          % "1.12.3" % "test"
+  )
+  case _ => Seq(
+    "org.specs2"     %% "specs2-core"     % "3.6.3"  % "test",
+    "org.specs2"     %% "specs2-junit"    % "3.6.3"  % "test"
+  )
+}
 
 scalacOptions ++= Seq("-optimize", "-unchecked", "-deprecation", "-Xcheckinit", "-encoding", "utf8")
 
